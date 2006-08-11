@@ -1,0 +1,7 @@
+category: Dotnet Doc
+requires: cygwin 
+sdesc: cygwin gconf-sharp glade-sharp gtk-sharp gtkhtml-sharp mono monodoc
+ldesc: "Collection of tools for the Mono CSharp environment:
+* gasnview - ASN.1 viewer
+* gnunit   - NUnit framework GUI
+* monodoc  - documentation viewer and monodoc tools wrapper"
