@@ -6,22 +6,21 @@ Collection of tools for the Mono CSharp environment:
 * monodoc  - documentation viewer and monodoc tools wrapper
 
 Runtime requirements:
-  cygwin-1.5.24-2
   gconf-sharp2-2.16.0-1
-  glade-sharp2-2.10.0-1
-  glib-sharp2-2.10.0-1
+  glade-sharp2-2.10.1-1
+  glib-sharp2-2.10.1-1
   gnome-sharp2-2.16.0-1
-  gtk-sharp2-2.10.0-1
+  gtk-sharp2-2.10.1-1
   gtkhtml-sharp2-2.16.0-1
-  mono-1.2.3-1
-  monodoc-1.2.3-1
+  mono-1.2.4-1
+  monodoc-1.2.4-1
 
 Build requirements:
 (besides corresponding -devel packages)
   cygwin-1.5.24-2
   autoconf2.5-2.61-1
   automake1.9-1.9.6-2
-  cygport-0.2.9-1
+  cygport-0.3.5-1
   gawk-3.1.5-4
   gcc-core-3.4.4-3
   make-3.81-1
@@ -37,15 +36,15 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack mono-tools-1.2.3-X-src.tar.bz2
+  unpack mono-tools-1.2.4-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./mono-tools-1.2.3-X.cygport all
+  cygport ./mono-tools-1.2.4-X.cygport all
 
 This will create:
-  /usr/src/mono-tools-1.2.3-X-src.tar.bz2
-  /usr/src/mono-tools-1.2.3-X.tar.bz2
+  /usr/src/mono-tools-1.2.4-X-src.tar.bz2
+  /usr/src/mono-tools-1.2.4-X.tar.bz2
 
 -------------------------------------------
 
@@ -65,13 +64,13 @@ Files included in the binary package:
   /usr/lib/monodoc/browser.exe
   /usr/lib/pkgconfig/create-native-map.pc
   /usr/share/applications/monodoc.desktop
-  /usr/share/doc/Cygwin/mono-tools-1.2.3.README
-  /usr/share/doc/mono-tools-1.2.3/AUTHORS
-  /usr/share/doc/mono-tools-1.2.3/COPYING
-  /usr/share/doc/mono-tools-1.2.3/COPYING.LIB
-  /usr/share/doc/mono-tools-1.2.3/ChangeLog
-  /usr/share/doc/mono-tools-1.2.3/INSTALL
-  /usr/share/doc/mono-tools-1.2.3/README
+  /usr/share/doc/Cygwin/mono-tools-1.2.4.README
+  /usr/share/doc/mono-tools-1.2.4/AUTHORS
+  /usr/share/doc/mono-tools-1.2.4/COPYING
+  /usr/share/doc/mono-tools-1.2.4/COPYING.LIB
+  /usr/share/doc/mono-tools-1.2.4/ChangeLog
+  /usr/share/doc/mono-tools-1.2.4/INSTALL
+  /usr/share/doc/mono-tools-1.2.4/README
   /usr/share/locale/ca/LC_MESSAGES/mono-tools.mo
   /usr/share/locale/da/LC_MESSAGES/mono-tools.mo
   /usr/share/locale/es/LC_MESSAGES/mono-tools.mo
@@ -83,6 +82,9 @@ Files included in the binary package:
 ------------------
 
 Port Notes:
+
+----- version 1.2.4-1 -----
+Version bump.
 
 ----- version 1.2.3-1 -----
 Version bump.
