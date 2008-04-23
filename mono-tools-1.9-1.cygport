@@ -1,0 +1,13 @@
+inherit mono
+
+DESCRIPTION="Mono tools"
+
+src_install() {
+	cd ${B}
+	cyginstall
+
+	# More w/ and w/o .exe problems ...
+	mono_wrapper gasnview /usr/lib/mono/1.0/gasnview.exe
+	mono_wrapper gnunit /usr/lib/mono/1.0/gnunit.exe
+	mono_wrapper gnunit2 /usr/lib/mono/2.0/gnunit2.exe
+}
