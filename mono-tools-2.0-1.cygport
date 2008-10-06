@@ -1,0 +1,17 @@
+inherit mono
+
+DESCRIPTION="Mono tools"
+
+PATCH_URI="1.9-libintl.patch"
+
+CYGCONF_ARGS="--enable-release"
+
+src_install() {
+	cd ${B}
+	cyginstall
+
+	# More w/ and w/o .exe problems ...
+	mono_wrapper gasnview /usr/lib/gasnview/gasnview.exe
+	mono_wrapper gnunit /usr/lib/gnunit/gnunit.exe
+	mono_wrapper gnunit2 /usr/lib/gnunit/gnunit2.exe
+}

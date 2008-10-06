@@ -13,19 +13,19 @@ Runtime requirements:
   gnome-sharp2-2.20.1-1
   gtk-sharp2-2.12.1-1
   gtkhtml-sharp-2.20.1-1
-  mono-1.9.1-1
-  monodoc-1.9-1
+  mono-2.0-1
+  monodoc-2.0-1
+  webkit-sharp-0.3.105827-1
 
 Build requirements:
 (besides corresponding -devel packages)
-  cygwin-1.5.24-2
-  autoconf2.5-2.61-1
-  automake1.10-1.10-1
-  cygport-0.3.7-1
-  gawk-3.1.5-4
+  autoconf2.5-2.63-1
+  automake1.10-1.10.1-1
+  cygport-0.4.0-1
+  gawk-3.1.6-1
   gcc-core-3.4.4-3
   make-3.81-1
-  pkg-config-0.21-1
+  pkg-config-0.23a-2
   sed-4.1.5-2
 
 Canonical website:
@@ -37,15 +37,15 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack mono-tools-1.9-X-src.tar.bz2
+  unpack mono-tools-2.0-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./mono-tools-1.9-X.cygport all
+  cygport ./mono-tools-2.0-X.cygport all
 
 This will create:
-  /usr/src/mono-tools-1.9-X-src.tar.bz2
-  /usr/src/mono-tools-1.9-X.tar.bz2
+  /usr/src/mono-tools-2.0-X-src.tar.bz2
+  /usr/src/mono-tools-2.0-X.tar.bz2
 
 -------------------------------------------
 
@@ -54,56 +54,59 @@ Files included in the binary package:
   /usr/bin/create-native-map
   /usr/bin/gasnview
   /usr/bin/gendarme
+  /usr/bin/gendarme-wizard
   /usr/bin/gnunit
   /usr/bin/gnunit2
   /usr/bin/gui-compare
+  /usr/bin/ilcontrast
   /usr/bin/monodoc
+  /usr/bin/mprof-decoder
+  /usr/bin/mprof-heap-viewer
   /usr/lib/create-native-map/MapAttribute.cs
   /usr/lib/create-native-map/create-native-map.exe
+  /usr/lib/gasnview/gasnview.exe
   /usr/lib/gendarme/Gendarme.Framework.dll
   /usr/lib/gendarme/Gendarme.Rules.BadPractice.dll
-  /usr/lib/gendarme/Gendarme.Rules.BadPractice.xml
   /usr/lib/gendarme/Gendarme.Rules.Concurrency.dll
-  /usr/lib/gendarme/Gendarme.Rules.Concurrency.xml
   /usr/lib/gendarme/Gendarme.Rules.Correctness.dll
-  /usr/lib/gendarme/Gendarme.Rules.Correctness.xml
   /usr/lib/gendarme/Gendarme.Rules.Design.dll
-  /usr/lib/gendarme/Gendarme.Rules.Design.xml
   /usr/lib/gendarme/Gendarme.Rules.Exceptions.dll
-  /usr/lib/gendarme/Gendarme.Rules.Exceptions.xml
   /usr/lib/gendarme/Gendarme.Rules.Interoperability.dll
-  /usr/lib/gendarme/Gendarme.Rules.Interoperability.xml
+  /usr/lib/gendarme/Gendarme.Rules.Maintainability.dll
   /usr/lib/gendarme/Gendarme.Rules.Naming.dll
-  /usr/lib/gendarme/Gendarme.Rules.Naming.xml
   /usr/lib/gendarme/Gendarme.Rules.Performance.dll
-  /usr/lib/gendarme/Gendarme.Rules.Performance.xml
   /usr/lib/gendarme/Gendarme.Rules.Portability.dll
-  /usr/lib/gendarme/Gendarme.Rules.Portability.xml
   /usr/lib/gendarme/Gendarme.Rules.Security.dll
-  /usr/lib/gendarme/Gendarme.Rules.Security.xml
+  /usr/lib/gendarme/Gendarme.Rules.Serialization.dll
   /usr/lib/gendarme/Gendarme.Rules.Smells.dll
-  /usr/lib/gendarme/Gendarme.Rules.Smells.xml
   /usr/lib/gendarme/Gendarme.Rules.Ui.dll
-  /usr/lib/gendarme/Gendarme.Rules.Ui.xml
-  /usr/lib/gendarme/Mono.Cecil.dll
+  /usr/lib/gendarme/gendarme-wizard.exe
   /usr/lib/gendarme/gendarme.exe
   /usr/lib/gendarme/rules.xml
+  /usr/lib/gnunit/gnunit.exe
+  /usr/lib/gnunit/gnunit2.exe
   /usr/lib/gui-compare/Mono.Cecil.dll
   /usr/lib/gui-compare/gui-compare.exe
-  /usr/lib/mono/1.0/gasnview.exe
-  /usr/lib/mono/1.0/gnunit.exe
-  /usr/lib/mono/2.0/gnunit2.exe
+  /usr/lib/ilcontrast/ilcontrast.exe
+  /usr/lib/mono-tools/heap-snapshot-explorer.dll
+  /usr/lib/mono-tools/mprof-decoder.exe
+  /usr/lib/mono-tools/mprof-heap-viewer.exe
+  /usr/lib/mono-tools/profiler-decoder-library.dll
   /usr/lib/monodoc/GtkHtmlHtmlRender.dll
+  /usr/lib/monodoc/MonoWebBrowserHtmlRender.dll
+  /usr/lib/monodoc/WebKitHtmlRender.dll
   /usr/lib/monodoc/browser.exe
   /usr/lib/pkgconfig/create-native-map.pc
   /usr/lib/pkgconfig/gendarme-framework.pc
+  /usr/share/applications/ilcontrast.desktop
   /usr/share/applications/monodoc.desktop
-  /usr/share/doc/mono-tools-1.9/AUTHORS
-  /usr/share/doc/mono-tools-1.9/COPYING
-  /usr/share/doc/mono-tools-1.9/COPYING.LIB
-  /usr/share/doc/mono-tools-1.9/ChangeLog
-  /usr/share/doc/mono-tools-1.9/INSTALL
-  /usr/share/doc/mono-tools-1.9/README
+  /usr/share/applications/mprof-heap-viewer.desktop
+  /usr/share/doc/mono-tools-2.0/AUTHORS
+  /usr/share/doc/mono-tools-2.0/COPYING
+  /usr/share/doc/mono-tools-2.0/COPYING.LIB
+  /usr/share/doc/mono-tools-2.0/ChangeLog
+  /usr/share/doc/mono-tools-2.0/INSTALL
+  /usr/share/doc/mono-tools-2.0/README
   /usr/share/locale/ca/LC_MESSAGES/mono-tools.mo
   /usr/share/locale/da/LC_MESSAGES/mono-tools.mo
   /usr/share/locale/es/LC_MESSAGES/mono-tools.mo
@@ -111,11 +114,17 @@ Files included in the binary package:
   /usr/share/locale/pt_BR/LC_MESSAGES/mono-tools.mo
   /usr/share/man/man1/create-native-map.1.gz
   /usr/share/man/man1/gendarme.1.gz
+  /usr/share/man/man1/mprof-decoder.1.gz
+  /usr/share/man/man1/mprof-heap-viewer.1.gz
+  /usr/share/pixmaps/ilcontrast.png
   /usr/share/pixmaps/monodoc.png
 
 ------------------
 
 Port Notes:
+
+----- version 2.0-1 -----
+Version bump.
 
 ----- version 1.9-1 -----
 Version bump.
