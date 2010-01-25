@@ -1,8 +1,5 @@
-category: Dotnet Doc
-requires: gconf-sharp2 glade-sharp2 glib-sharp2 gnome-sharp2 gtk-sharp2 gtkhtml-sharp mono monodoc webkit-sharp
+category: DotNET Devel
+requires: mono mono-atk-sharp2.0 mono-glade-sharp2.0 mono-glib-sharp2.0 mono-gnome-sharp2.24 mono-gtk-sharp2.0 mono-pango-sharp2.0 mono-webkit-sharp1.1
 sdesc: "Mono documentation browser, NUnit GUI, and ASN.1 viewer"
-ldesc: "Collection of tools for the Mono CSharp environment:
-* gasnview - ASN.1 viewer
-* gendarme - rule-based tool to find problems .NET assemblies
-* gnunit   - NUnit framework GUI
-* monodoc  - documentation viewer and monodoc tools wrapper"
+ldesc: "Mono Tools is a collection of development and testing programs and
+utilities for use with Mono."

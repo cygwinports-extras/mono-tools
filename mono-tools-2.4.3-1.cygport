@@ -1,0 +1,16 @@
+inherit mono
+
+DESCRIPTION="Mono tools"
+
+PATCH_URI="2.4.2-cygwin.patch"
+
+CYGCONF_ARGS="--enable-release"
+MAKEOPTS+=" -j1"
+
+src_install() {
+	cd ${B}
+	cyginstall
+
+	# w/ and w/o .exe clash
+	mono_wrapper gasnview /usr/lib/mono/1.0/gasnview.exe
+}
